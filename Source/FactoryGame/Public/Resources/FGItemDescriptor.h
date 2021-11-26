@@ -4,6 +4,7 @@
 
 #include "FactoryGame.h"
 #include "UObject/Object.h"
+#include "FactoryGame.h" // MODDING EDIT
 #include "Styling/SlateBrush.h"
 #include "FGItemDescriptor.generated.h"
 

@@ -77,6 +77,9 @@ public:
 	FTimerHandle mDrawDebugTimerHandle;
 
 protected:
+
+	friend class UFSTrainPlatformOperator;
+	
 	/** This bool indicates an arbitrary direction of this platform. It is used for stepping through platforms 
 	*	Platforms that connect must have mismatched values for their snapped components ( i.e: 1 -> 0 || 0 -> 1 && !(1 -> 1) etc. )
 	*/

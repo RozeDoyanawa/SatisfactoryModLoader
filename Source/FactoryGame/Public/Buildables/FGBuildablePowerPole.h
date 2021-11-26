@@ -78,6 +78,9 @@ protected:
 	TSubclassOf<class UFGPoleConnectionsWidget> mConnectionWidgetClass;
 
 private:
+
+	friend class UFSPowerPoleOperator;
+	
 	/** The connection on this pole. */
 	UPROPERTY( VisibleAnywhere, Category = "PowerPole" )
 	TArray<class UFGPowerConnectionComponent*> mPowerConnections;

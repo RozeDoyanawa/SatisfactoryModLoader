@@ -211,6 +211,7 @@ protected:
 private:
 	friend class AFGRailroadTrackHologram;
 	friend class AFGRailroadSubsystem;
+	friend class UFSRailroadTrackOperator;
 
 	/** The spline component for this train track. */
 	UPROPERTY( VisibleAnywhere, Category = "Spline" )

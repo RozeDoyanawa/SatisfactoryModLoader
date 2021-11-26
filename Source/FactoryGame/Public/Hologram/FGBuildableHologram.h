@@ -80,6 +80,11 @@ UCLASS()
 class FACTORYGAME_API AFGBuildableHologram : public AFGHologram
 {
 	GENERATED_BODY()
+
+	// User Mod Edits
+	friend class FFicsItNetworksModule;
+	friend class AFINNetworkCableHologram;
+	// User Mod Edits
 public:
 	/** Tags for marking components in the hologram. */
 	static FName mInputConnectionMeshTag;

@@ -100,6 +100,9 @@ protected:
 	FName mExtractorTypeName = "";
 
 private:
+
+	friend class UFSResourceExtractorOperator;
+	
 	/** DEPRECATED - Only used for old save support. Use mExtractableResource instead.
 	*   The resource node we want to extract from.
 	*/

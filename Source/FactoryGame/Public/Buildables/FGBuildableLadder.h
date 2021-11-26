@@ -59,6 +59,8 @@ private:
 
 protected:
 
+	friend class UFSLadderOperator;
+	
 	/** Width of the ladder */
 	UPROPERTY( EditDefaultsOnly, Category = "Ladder" )
 	float mWidth;

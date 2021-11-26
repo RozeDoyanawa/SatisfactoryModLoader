@@ -236,6 +236,9 @@ private:
 		TArray< FOverlapResult > potentialBlockers );
 
 protected:
+
+	friend class UFSConveyorOperator;
+	
 	/** Physical type of connector used for this connection. */
 	UPROPERTY( EditDefaultsOnly, Category = "Connection" )
 	EFactoryConnectionConnector mConnector;

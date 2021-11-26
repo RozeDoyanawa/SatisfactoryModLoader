@@ -321,6 +321,9 @@ protected:
 	float mCurrentDockForDuration;
 
 private:
+
+	friend class UFSTrainPlatformCargoOperator;
+	
 	/** Inventory where we transfer items to when unloading from a vehicle. Never reference this pointer directly. Use mCargoInventoryHandler->GetActiveInventory(). */
 	UPROPERTY( SaveGame )
 	class UFGInventoryComponent* mInventory;

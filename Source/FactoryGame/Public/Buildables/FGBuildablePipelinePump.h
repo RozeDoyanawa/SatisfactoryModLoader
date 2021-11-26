@@ -132,6 +132,9 @@ private:
 	void UpdateFlowLimitOnFluidBox();
 	
 private:
+
+	friend class UFSPumpOperator;
+	
 	/** Maximum pressure this pump applies. [meters] */
 	UPROPERTY( EditDefaultsOnly, Category = "Pump" )
 	float mMaxPressure;

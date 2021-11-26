@@ -100,6 +100,10 @@ private:
 	void AssignRailroadTrack( class AFGBuildableRailroadTrack* track );
 
 protected:
+
+	friend class UFSTrainPlatformOperator;
+	friend class UFSTrainStationOperator;
+	
 	UPROPERTY( SaveGame )
 	class AFGBuildableRailroadTrack* mRailroadTrack;
 

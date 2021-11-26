@@ -175,6 +175,8 @@ protected:
 
 private:
 	friend class AFGConveyorBeltHologram;
+	friend class UFSConveyorBeltOperator;
+	friend class UFSAdaptiveUtil;
 
 	/** Meshes for items. */
 	UPROPERTY( Meta = ( NoAutoJson ) )

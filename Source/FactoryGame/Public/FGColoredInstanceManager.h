@@ -55,6 +55,8 @@ public:
 		}
 
 	private:
+		friend class UFSSelection;
+		
 		friend UFGColoredInstanceManager;
 
 		TArray<float> CustomData;
@@ -98,6 +100,7 @@ public:
 	void UpdateMaterialColors();
 
 private:
+	friend class UFSSelection;
 
 	//class UHierarchicalInstancedStaticMeshComponent* CreateHierarchicalInstancingComponent( class UStaticMesh* staticMesh, uint8 numCustomData, bool useAsOccluder, FVector2D& minMaxCullDistance );
 	class UHierarchicalInstancedStaticMeshComponent* CreateHierarchicalInstancingComponent( class UStaticMesh* staticMesh,TArray<class UMaterialInterface*> overridenMaterials, uint8 numCustomData, bool useAsOccluder, FVector2D& minMaxCullDistance );

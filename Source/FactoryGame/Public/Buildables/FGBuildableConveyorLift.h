@@ -106,6 +106,7 @@ public:
 
 private:
 	friend class AFGConveyorLiftHologram;
+	friend class UFSAdaptiveUtil;
 
 	/**
 	 * The transform of the top part.

@@ -5,6 +5,8 @@
 #include "FactoryGame.h"
 #include "IncludeInBuild.h"
 #include "OptionValueContainer.h"
+#include "Engine/DeveloperSettings.h"
+
 #include "FGOptionsSettings.generated.h"
 
 UENUM( BlueprintType )

@@ -4,6 +4,7 @@
 
 #include "FactoryGame.h"
 #include "Resources/FGItemDescriptor.h"
+#include "FactoryGame.h" // MODDING EDIT
 #include "ItemAmount.generated.h"
 
 /**

@@ -56,6 +56,8 @@ protected:
 	void UpdateClearance();
 
 private:
+	friend class UFSLadderOperator;
+	
 	UPROPERTY( EditDefaultsOnly, Category = "Ladder" )
 	float mLadderBottomSnapThreshold;
 

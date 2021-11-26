@@ -376,6 +376,9 @@ public:
 	TSubclassOf< class UFGFactoryCustomizationDescriptor_Swatch > GetMigrationSwatchForSlot( int32 slotID );
 
 private:
+	// Allow the Colored instance manager objects created to directly add entries into the FactoryColoredMaterialMap
+	friend class UFGFactoryMaterialInstanceManager;
+	friend class UFSSyncBuild;
 
 	/** last used net construction ID. Used to identify pending constructions over network. Will increase ID every constructed building. */
 	FNetConstructionID mLastServerNetConstructionID;

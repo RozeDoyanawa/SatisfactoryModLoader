@@ -156,6 +156,9 @@ private:
 	void ConstructSplineFromTrajectoryData();
 
 protected:
+
+	friend class UFSJumppadOperator;
+	
 	/** Power capacity of the internal battery. */
 	UPROPERTY( EditDefaultsOnly, Category = "JumpPad", meta = ( ClampMin = "0.0" ) )
 	float mPowerBankCapacity;

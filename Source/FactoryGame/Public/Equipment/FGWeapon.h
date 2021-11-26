@@ -281,6 +281,10 @@ protected:
 	UFUNCTION()
 	virtual void OnAmmoFired( AActor* SpawnedActor );
 
+protected:
+
+	friend class AFSController;
+	
 	UPROPERTY()
 	AFGHUD* mAssociatedHud = nullptr;
 	//[DavalliusA:Wed/20-03-2019] the base hud object will never get invalid during use, so we can use anormal pointer here to access it.

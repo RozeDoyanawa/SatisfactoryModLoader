@@ -98,6 +98,9 @@ protected:
 	FOnSortRulesChanged OnSortRulesChangedDelegate;
 
 private:
+
+	friend class UFSConveyorSmartSplitterOperator;
+	
 	/** These are the sorting rules the player has entered. */
 	UPROPERTY( ReplicatedUsing = OnRep_SortRules, SaveGame, EditDefaultsOnly, Category = "Sort", Meta = (NoAutoJson = true) )
 	TArray< FSplitterSortRule > mSortRules;
